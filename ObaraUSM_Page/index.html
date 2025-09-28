@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tytuł i opis SEO -->
+    <title>ObaraUSM | Profesjonalne Spawanie i Obróbka Metali</title>
+    <meta name="description" content="ObaraUSM oferuje profesjonalne usługi spawania i obróbki metali. Sprawdź naszą galerię i ofertę." />
+    <meta name="keywords" content="spawanie, obróbka metali, stal, usługi, ObaraUSM" />
+    <meta name="author" content="Tomasz Obara USM" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="ObaraUSM | Profesjonalne Spawanie i Obróbka Metali" />
+    <meta property="og:description" content="ObaraUSM oferuje profesjonalne usługi spawania i obróbki metali. Sprawdź naszą galerię i ofertę." />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:url" content="https://ObaraUSM.pl" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/index.css">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* --- Scroll Lock Styles --- */
+      body.no-scroll {
+        overflow: hidden;
+        padding-right: var(--scrollbar-width, 0px);
+      }
+      body.no-scroll header {
+        padding-right: var(--scrollbar-width, 0px);
+      }
+      body.no-scroll .scroll-to-top-button {
+        right: calc(2rem + var(--scrollbar-width, 0px));
+      }
+    </style>
+
+    <!-- Importmap dla eksperymentalnego CDN React (jeśli potrzebujesz) -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+        "react/": "https://aistudiocdn.com/react@^19.1.1/",
+        "react": "https://aistudiocdn.com/react@^19.1.1"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Entry point React -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
